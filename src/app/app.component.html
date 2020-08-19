@@ -7,13 +7,14 @@
         Valor de la variable show = {{show}}
     </p>
     <br>
-    <button class="btn btn-warning" (click)="show=!show">Mostrar otro parrafo</button>
+    <button class="btn btn-dark mb-3" (click)="show=!show">Mostrar otro parrafo</button>
+    <button class="btn btn-danger mb-3" (click)="fondo='bg-dark';">Colorear fondo de párrafo</button>
 
-    <p class="text-info" *ngIf="show; else show2">
+    <p class="text-info" *ngIf="show; else show2" [ngClass]="fondo">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores necessitatibus quisquam accusamus, dolore neque dolores, modi sequi atque ipsa deleniti beatae? Culpa, error. Eos vitae libero incidunt sed harum error!
     </p>
     <ng-template #show2>    <!-- cuando show sea falsa, mostrará este template-->  
-        <p class="text-danger">
+        <p class="text-danger" [ngClass]="fondo">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, minima vel. Minus ex, placeat libero rem ducimus esse repudiandae veniam? Optio eligendi blanditiis repudiandae obcaecati nesciunt sed asperiores autem neque?
         </p>
     </ng-template>

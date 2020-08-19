@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Proyecto1';
   show: boolean = true; // declaramos e iniciamos en true la variable show que se exportará.
+  fondo: string = "";
 }
