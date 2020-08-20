@@ -9,9 +9,14 @@
     <p>
         valor del contador: {{contador}}
     </p>
-    <button type="button" class="btn btn-primary mb-4">Hola mundo</button>
+    <button type="button" class="btn btn-primary mb-4" [ngIf]="">
+        Hola mundo
+    </button>
     <br>
-    <button type="button" class="btn btn-primary mb-4">Adios</button>
+    <ng-template #verAdios>
+        <button type="button" class="btn btn-primary mb-4">Adios</button>
+    </ng-template>
+    
 </div>
 
 <footer>

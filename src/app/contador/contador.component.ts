@@ -12,8 +12,12 @@ export class ContadorComponent implements OnInit {
   // exporto las variables:
   textoTitulo: string = "Problema: Contador - Ejercicio 1";
   contador: number = 0;
+  verHola: boolean = false;
+  verAdios: boolean = false;
+  
 
   ngOnInit(): void {
   }
 
 }
+
