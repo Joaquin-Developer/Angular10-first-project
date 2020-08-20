@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CabeceraComponent } from './cabecera/cabecera.component';
 import { CompPruebaNgforComponent } from './comp-prueba-ngfor/comp-prueba-ngfor.component';
+import { ContadorComponent } from './contador/contador.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CabeceraComponent,
-    CompPruebaNgforComponent
+    CompPruebaNgforComponent,
+    ContadorComponent
   ],
   imports: [
     BrowserModule,
