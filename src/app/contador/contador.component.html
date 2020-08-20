@@ -1,21 +1,30 @@
 <h1 class="container bg-dark text-white text-center my-4 py-4">
     {{textoTitulo}}
 </h1>
-<br>
-<div class="container">
 
-    <button type="button" class="btn btn-success mb-3" (click)="contador=contador+1">Contador Positivo</button>
-    <button type="button" class="btn btn-danger mb-3" (click)="contador=contador-1" >Contador Negativo</button>
+<div class="container">
+    <br>
+    <p>
+        {{letraEjercicio}}
+    </p>
+    <br>
+
+    <button id="btnFun1" type="button" class="btn btn-success mb-3" (click)="contador=contador+1;">Contador Positivo</button>
+    <button id="btnFun2" type="button" class="btn btn-danger mb-3" (click)="contador=contador-1" >Contador Negativo</button>
     <p>
         valor del contador: {{contador}}
     </p>
-    <button type="button" class="btn btn-primary mb-4" [ngIf]="">
+    <button type="button" class="btn btn-primary mb-4" *ngIf="contador>=15;" [ngClass]="fondo">
         Hola mundo
     </button>
+
     <br>
-    <ng-template #verAdios>
-        <button type="button" class="btn btn-primary mb-4">Adios</button>
-    </ng-template>
+    <button type="button" class="btn btn-primary mb-4" *ngIf="contador<=-10;" [ngClass]="fondo">Adios</button>
+
+    <!--ng-template #verAdios>
+        <button type="button" class="btn btn-primary mb-4" [ngClass]="fondo">Adios</button>
+    </ng-template-->
+
     
 </div>
 
