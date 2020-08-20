@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompPruebaNgforComponent implements OnInit {
 
+  cursos: string[] = ["HTML", "CSS", "TS", "ANGULAR"];  // este array de strings lo vamos a iterar en el html con ngFor
+
   constructor() { }
 
   ngOnInit(): void {

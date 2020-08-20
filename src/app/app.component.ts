@@ -11,6 +11,5 @@ export class AppComponent {
   show: boolean = true; // declaramos e iniciamos en true la variable show que se exportará.
   fondo: string = "";
 
-  cursos: string[] = ["HTML", "CSS", "TS", "ANGULAR"];  // este array de strings lo vamos a iterar en el html con ngFor
 
 }
