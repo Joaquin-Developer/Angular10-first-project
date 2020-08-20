@@ -7,7 +7,7 @@
     </ul>
     <!-- vamos a hacer lo mismo pero con una tabla -->
 
-    <table>
+    <table class="table">
         <thead>
             <tr>
                 <th scope="col">#</th>
@@ -17,23 +17,11 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th scope="row"></th>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th scope="row"></th>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th scope="row"></th>
-                <td></td>
-                <td></td>
-                <td></td>
+            <tr *ngFor="let animal of animales; index as i;">
+                <th scope="row">{{i + 1}} </th>
+                <td>{{animal.tipo}}</td>
+                <td>{{animal.nombre}}</td>
+                <td>{{animal.edad}}</td>
             </tr>
         </tbody>
     </table>
