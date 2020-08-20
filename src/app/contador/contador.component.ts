@@ -9,6 +9,9 @@ export class ContadorComponent implements OnInit {
 
   constructor() { }
 
+  // exporto las variables:
+  
+
   ngOnInit(): void {
   }
 
