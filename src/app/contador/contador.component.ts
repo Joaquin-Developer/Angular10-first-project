@@ -10,7 +10,8 @@ export class ContadorComponent implements OnInit {
   constructor() { }
 
   // exporto las variables:
-  textoTitulo: string = "Problema: Contador - Ejercicio 1"
+  textoTitulo: string = "Problema: Contador - Ejercicio 1";
+  contador: number = 0;
 
   ngOnInit(): void {
   }

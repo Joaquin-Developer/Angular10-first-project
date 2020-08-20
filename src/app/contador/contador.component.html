@@ -1,10 +1,11 @@
 <h1 class="container bg-dark text-white text-center my-4 py-4">
     {{textoTitulo}}
 </h1>
-<p>
-    
-</p>
 <br>
 
-<button type="button" class="btn btn-success mb-3">Contador Positivo</button>
-<button type="button" class="btn btn-danger mb-3" >Contador Negativo</button>
+<button type="button" class="btn btn-success mb-3" (click)="contador=contador+1">Contador Positivo</button>
+<button type="button" class="btn btn-danger mb-3" (click)="contador=contador-1" >Contador Negativo</button>
+
+<p>
+    valor del contador: {{contador}}
+</p>
